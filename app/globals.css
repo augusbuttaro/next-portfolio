@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 345 100% 97%; /* Light Pink Background */
+    --foreground: 345 15% 30%; /* Dark Pink Text */
+    --card: 345 100% 97%; /* Light Pink Card Background */
+    --card-foreground: 345 15% 30%; /* Dark Pink Card Text */
+    --popover: 345 100% 97%; /* Light Pink Popover Background */
+    --popover-foreground: 345 15% 30%; /* Dark Pink Popover Text */
+    --primary: 0 100% 75%; /* Bright Pink - #ff8fab */
+    --primary-foreground: 0 0% 98%; /* Near White Text */
+    --secondary: 345 50% 90%; /* Light Pink */
+    --secondary-foreground: 345 15% 30%; /* Dark Pink */
+    --muted: 345 50% 90%; /* Light Pink */
+    --muted-foreground: 345 20% 40%; /* Muted Pink Text */
+    --accent: 345 50% 90%; /* Light Pink */
+    --accent-foreground: 345 15% 30%; /* Dark Pink */
+    --destructive: 345 100% 60%; /* Strong Pink */
+    --destructive-foreground: 0 0% 98%; /* Near White Text */
+    --border: 345 50% 85%; /* Soft Pink Border */
+    --input: 345 50% 85%; /* Soft Pink Input Background */
+    --ring: 345 15% 30%; /* Dark Pink Ring */
+    --radius: 0.5rem;
+    --chart-1: 345 76% 61%; /* Chart Pink 1 */
+    --chart-2: 325 58% 39%; /* Chart Pink 2 */
+    --chart-3: 305 37% 24%; /* Chart Pink 3 */
+    --chart-4: 295 74% 66%; /* Chart Pink 4 */
+    --chart-5: 285 87% 67%; /* Chart Pink 5 */
+  }
+
+  .dark {
+    --background: 345 15% 15%; /* Darker Pink Background */
+    --foreground: 0 0% 98%; /* Near White Text */
+    --card: 345 15% 15%; /* Darker Pink Card Background */
+    --card-foreground: 0 0% 98%; /* Near White Card Text */
+    --popover: 345 15% 15%; /* Darker Pink Popover Background */
+    --popover-foreground: 0 0% 98%; /* Near White Popover Text */
+    --primary: 0 100% 75%; /* Bright Pink - #ff8fab */
+    --primary-foreground: 345 15% 15%; /* Darker Pink Text */
+    --secondary: 345 20% 25%; /* Darker Pink */
+    --secondary-foreground: 0 0% 98%; /* Near White Text */
+    --muted: 345 20% 25%; /* Darker Pink */
+    --muted-foreground: 345 30% 50%; /* Muted Pink Text */
+    --accent: 345 20% 25%; /* Darker Pink */
+    --accent-foreground: 0 0% 98%; /* Near White Text */
+    --destructive: 345 100% 40%; /* Stronger Pink */
+    --destructive-foreground: 0 0% 98%; /* Near White Text */
+    --border: 345 20% 25%; /* Dark Pink Border */
+    --input: 345 20% 25%; /* Dark Pink Input Background */
+    --ring: 345 30% 35%; /* Dark Pink Ring */
+    --chart-1: 345 70% 50%; /* Chart Pink 1 */
+    --chart-2: 325 60% 45%; /* Chart Pink 2 */
+    --chart-3: 305 80% 55%; /* Chart Pink 3 */
+    --chart-4: 295 65% 60%; /* Chart Pink 4 */
+    --chart-5: 285 75% 55%; /* Chart Pink 5 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
